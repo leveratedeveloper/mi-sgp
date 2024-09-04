@@ -14,16 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/home', function () {
     return view('home');
-});
+})->name('home');
+
 
 Route::get('/about', function () {
     return view('about');
-});
+})->name('about');
+
+Route::get('/management-team', function () {
+    return view('management-team');
+})->name('management');
+
+Route::get('/our-strategy', function () {
+    return view('our-strategy');
+})->name('strategy');
+
+Route::get('/contact-us', function () {
+    return view('contact-us');
+})->name('contact');
 
 
 Route::group(['prefix' => 'admin'], function () {
