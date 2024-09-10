@@ -5,8 +5,8 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-1" style="width: 80px;background-color: #003D79;"></div>
-            <div class="col-md-11">
+            <div class="col-lg-1 col-md-1 col-1" style="width: 80px;background-color: #003D79;"></div>
+            <div class="col-lg-11 col-md-10 col-11">
             <div class="white-spacing-50 py-5"></div>
                     <div class="container">
                         <div class="row">

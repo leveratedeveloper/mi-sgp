@@ -333,6 +333,35 @@ p{
     bottom: 5px;
     position: relative;
 }
+.orange-space{
+    background-color: #FFB700;
+    height: 60vh;
+}
+.orange-space-strategy{
+    background-color: #FFB700;
+    height: 60vh;
+}
+.section-benefit{
+    background-image: url('/images/background-1.webp');
+    height: 50vh; 
+    background-size: cover;
+}
+.padding-bespoke{
+    padding-top: 300px;
+}
+.product-section{
+    background-image: url('/images/background-3.webp');
+    height: 50vh; 
+    background-size: cover;
+}
+.bg-open-doors{
+    background-image: url('/images/background-2.webp');
+    height: 30vh;
+    background-size: cover;
+}
+.h2-investa{
+    padding-top: 120px;line-height: 1.3em;
+}
 
 @media screen and (max-width: 768px) {
     .contact-info-text::before{
@@ -364,5 +393,78 @@ p{
     .overlay-text p{
         font-weight: bold;
         color: white; 
+    }
+    .orange-space{
+        background-color: #FFB700;
+        height: 60vh;
+    }
+    .orange-space-strategy{
+        background-color: #FFB700;
+        height: 60vh;
+    }
+    .section-benefit{
+        background-image: url('/images/background-1.webp');
+        height: 50vh; 
+        background-size: cover;
+    }
+    .padding-bespoke{
+        padding-top: 300px;
+    }
+    .product-section{
+        background-image: url('/images/background-3.webp');
+        height: 50vh; 
+        background-size: cover;
+    }
+    .bg-open-doors{
+        background-image: url('/images/background-2.webp');
+        height: 30vh;
+        background-size: cover;
+    }
+    .h2-investa{
+        padding-top: 120px;line-height: 1.3em;
+    }
+}
+
+@media screen and (min-width: 768px) and ( max-width: 1200px) {
+    .carousel-caption{
+        bottom: 0;
+        top: 20% !important;
+        left: 11%;
+    }
+    .orange-space{
+        background-color: #FFB700;
+        height: 40vh;
+    }
+    .orange-space-strategy{
+        background-color: #FFB700;
+        height: 45vh;
+    }
+    .section-benefit{
+        background-image: url('/images/background-1.webp');
+        height: 25vh; 
+        background-size: cover;
+    }
+    .padding-bespoke{
+        padding-top: 160px;
+    }
+    .product-section{
+        background-image: url('/images/background-3.webp');
+        height: 30vh; 
+        background-size: cover;
+    }
+    .text-fold{
+        font-size: 18px;
+    }
+    .bg-open-doors{
+        background-image: url('/images/background-2.webp');
+        height: 20vh;
+        background-size: cover;
+    }
+    .item-product{
+        top: -85px;
+        position: relative;
+    }
+    .h2-investa{
+        padding-top: 25px;line-height: 1.3em;
     }
 }

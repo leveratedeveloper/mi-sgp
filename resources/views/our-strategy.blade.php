@@ -9,8 +9,8 @@
             <img src="{{ asset('images/image02-strategy.webp') }}" alt="" class="img-fluid" style="margin-top: 50px;">
         </div>
         <div class="col-md-5 ps-5">
-            <h2 class="display-5" style="padding-top: 300px;">Bespoke Equity & <br> <span class="highlight-yellow">Fixed Income Funds.</span></h2>
-            <div class="col-9">
+            <h2 class="display-5 padding-bespoke">Bespoke Equity & <br> <span class="highlight-yellow">Fixed Income Funds.</span></h2>
+            <div class="col-lg-9 col-md-12 col-9">
             <p>Tailored fund solutions in optimized jurisdiction designed to support institutional and family office investors in realizing their unique investment objectives.</p>
             </div>
         </div>
@@ -37,10 +37,10 @@
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-10 d-flex flex-column justify-content-center">
-                        <h2 class="display-5 fw-bolder" style="padding-top: 130px;line-height: 1.3em;">
+                        <h2 class="display-5 fw-bolder h2-investa">
                             Investa <span class="highlight-yellow"> Money Market </span> Fund.
                         </h2>
-                        <div class="col-6">
+                        <div class="col-lg-6 col-md-12 col-6">
                             <p class="mt-4">
                             Launched at the end of 2014, our flagship fund is now distributed by global private banks, giving investors access to liquid instrument with attractive yield.
                             </p>
@@ -55,7 +55,7 @@
             </div>
             
         </div>
-        <div class="col-md-4 col-lg-4" style="background-color: #FFB700;height: 60vh"></div>
+        <div class="col-md-4 col-lg-4 orange-space-strategy"></div>
     </div>
     </div>
 
@@ -77,33 +77,33 @@
     </div>
 </div>
 
-<div class="container-fluid py-5 d-none d-md-block" style="background-image: url('{{ asset('images/background-3.webp') }}');height: 50vh; background-size: cover">
+<div class="container-fluid py-5 d-none d-md-block product-section">
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-11">
             <div class="container item-product">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-4 col-3">
                         <div class="image-overlay-container">
                             <img src="{{ asset('images/img-4.webp') }}" alt="Background Image" class="img-fluid">
                             <div class="overlay-text">
-                                <h4>The ability to access <br> Indonesia money <br>market product</h4>
+                                <h4 class="text-fold">The ability to access <br> Indonesia money <br>market product</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-4 col-3">
                         <div class="image-overlay-container">
                             <img src="{{ asset('images/img-5.webp') }}" alt="Background Image" class="img-fluid">
                             <div class="overlay-text">
-                                <h4>Short term <br>investment with<br> optimum growth<br> potential</h4>
+                                <h4 class="text-fold">Short term <br>investment with<br> optimum growth<br> potential</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-4 col-3">
                         <div class="image-overlay-container">
                             <img src="{{ asset('images/img-6.webp') }}" alt="Background Image" class="img-fluid">
                             <div class="overlay-text">
-                                <h4>High Liquidity <br> (daily subscription <br> and redemption)</h4>
+                                <h4 class="text-fold">High Liquidity <br> (daily subscription <br> and redemption)</h4>
                             </div>
                         </div>
                     </div>
