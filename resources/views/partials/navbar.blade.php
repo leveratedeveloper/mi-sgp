@@ -41,8 +41,8 @@
 </nav>
 
 <!-- Desktop Version -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top d-md-block d-none">
-  <div class="container-fluid px-lg-5 px-2" style="max-width: 1522px;margin:auto;">
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top d-md-block d-none container-fluid">
+  <div class="container" >
     <a class="navbar-brand px-md-0 px-3" href="{{ route('home') }}">
         <img src="{{ asset('images/logo-mandiri.svg') }}" alt="Mandiri Investment" width="68">
     </a>
