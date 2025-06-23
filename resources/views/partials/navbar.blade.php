@@ -42,7 +42,7 @@
 
 <!-- Desktop Version -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top d-md-block d-none container-fluid">
-  <div class="container" >
+  <div class="container py-2">
     <a class="navbar-brand px-md-0 px-3" href="{{ route('home') }}">
         <img src="{{ asset('images/logo-mandiri.svg') }}" alt="Mandiri Investment" width="68">
     </a>
