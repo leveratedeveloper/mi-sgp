@@ -1,23 +1,27 @@
 
 @font-face {
-    font-family: 'myriad-pro-black';
-    font-style: 'normal';
-    font-weight: '700';
+    font-family: 'myriad-pro';
+    font-style: normal;
+    font-weight: 700;
     src: url('../fonts/Myriad-Pro-Black.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'myriad-pro-light';
-    src: url("../fonts/Myriad-Pro-Light.otf") format("opentype");
+    font-family: 'myriad-pro';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/Myriad-Pro-Light.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'myriad-pro-regular';
-    src: url("../fonts/Myriad-Pro-Regular.ttf") format("truetype");
+    font-family: 'myriad-pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Myriad-Pro-Regular.ttf') format('truetype');
 }
 
 body{
-    font-family: "myriad-pro-regular", sans-serif;
+    font-family: "myriad-pro", sans-serif;
     overflow-x: hidden;
 }
 
@@ -80,7 +84,17 @@ p{
     color: #323334;
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
+}
+.text-primary{
+    color: #003D79 !important;
+}
+.text-xs{
+    font-size: 13px;
+}
+
+.dropdown-toggle::after{
+    content: none !important;
 }
 
 .bottom-left {
@@ -167,9 +181,10 @@ p{
     color: #0056b3;
 }
 .highlight-yellow {
+    line-height: 1;
     display: inline-block;
-    border-bottom: 7px solid #f5c517;
-    padding-bottom: 3px;
+    border-bottom: 5px solid #f5c517;
+    padding-bottom: 0px;
 }
 .right-image {
     /* background-image: url('/images/slides/slide-1.jpg');
@@ -333,19 +348,6 @@ p{
     bottom: 5px;
     position: relative;
 }
-.orange-space{
-    background-color: #FFB700;
-    height: 60vh;
-}
-.orange-space-strategy{
-    background-color: #FFB700;
-    height: 60vh;
-}
-.section-benefit{
-    background-image: url('/images/background-1.webp');
-    height: 50vh; 
-    background-size: cover;
-}
 .padding-bespoke{
     padding-top: 300px;
 }
@@ -363,7 +365,224 @@ p{
     padding-top: 120px;line-height: 1.3em;
 }
 
-@media screen and (max-width: 768px) {
+
+/* Market Outlook */
+.overlay-section {
+    position: relative;
+    overflow: hidden;
+  }
+
+.overlay-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 2rem;
+    color: white;
+    /* background: linear-gradient(to right, rgba(0, 28, 61, 0.95) 40%, rgba(0, 28, 61, 0.5) 70%, rgba(0, 28, 61, 0) 100%); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.overlay-content h2 {
+    font-weight: 800;
+}
+
+.highlight-bar {
+    width: 80px;
+    height: 5px;
+    background-color: #ffc107;
+    margin: 1rem 0;
+}
+
+.subheadline_outlook{
+    width: 40%;
+}
+
+.bg-cover {
+    background: url('/images/bg-featured-news.webp') no-repeat center center;
+    background-size: cover;
+}
+.feature-box {
+    padding: 2rem;
+}
+.read-more-btn {
+    background-color: #003366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    position: relative;
+}
+.read-more-btn::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background-color: #FFB700;
+}
+.read-more-btn:hover {
+    background-color: #002244;
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+}
+.news-title {
+    font-weight: 700;
+    color: #003366;
+}
+.pagination .page-item.active .page-link {
+    background-color: #003366;
+    border-color: #003366;
+}
+
+.bg-section {
+    background: url('/images/outlook-footer.webp') no-repeat center center;
+    background-size: cover;
+    padding: 4rem 14rem;
+}
+
+.content-box {
+    background: white;
+    border-left: 10px solid #FFB700;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.content-box p{
+    max-width: 500px;
+}
+
+.text-box {
+    flex: 1 1 60%;
+}
+
+.contact-btn {
+    background-color: #003366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    position: relative;
+}
+
+.contact-btn::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background-color: #FFB700;
+}
+.feature-text{
+    color: #FFB700;
+}
+
+.headline {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #003366;
+}
+
+.headline-underline {
+    width: 100px;
+    height: 5px;
+    background-color: #ffc107;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+.bg-cover {
+    background: none;
+}
+.overlay-content {
+    padding: 1.5rem;
+}
+
+.overlay-content h2 {
+    font-size: 1.5rem;
+}
+.bg-section {
+    background: url('/images/outlook-footer.webp') no-repeat center center;
+    background-size: cover;
+    padding: 4rem 1rem;
+}
+.content-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.content-box p{
+    max-width: 275px;
+}
+
+.headline {
+    font-size: 1.5rem;
+}
+
+.text-box {
+    flex: 1 1 100%;
+}
+
+.contact-btn {
+    align-self: flex-start;
+}
+}
+
+/* Solutions */
+.strong_foundation{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.strong_foundation h4{
+    font-weight: bold;
+    color: #003D79;
+}
+.growth_driven h4{
+    font-weight: bold;
+    color: #003D79;
+}
+.money_market{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.money_market h6{
+    font-size: 20px;
+    color: #003D79;
+    margin-bottom: 5px;
+}
+.empower_change{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.empower_change h6{
+    font-size: 20px;
+    color: #003D79;
+    margin-bottom: 5px;
+}
+.grow-footer{
+    border-left: 15px solid #ffc107;
+    padding-left: 0;
+}
+@media screen and (max-width: 320px) {
+    .subheadline_outlook{
+        width: 100%;
+    }
     .contact-info-text::before{
         content: '';
         display: inline-block;
@@ -376,8 +595,8 @@ p{
     }
     .highlight-yellow {
         display: inline-block;
-        border-bottom: 5px solid #f5c517;
-        padding-bottom: 3px;
+        border-bottom: 3px solid #f5c517;
+        padding-bottom: 0px;
     }
     .overlay-text {
         position: relative;
@@ -396,7 +615,7 @@ p{
     }
     .orange-space{
         background-color: #FFB700;
-        height: 60vh;
+        height: 47vh;
     }
     .orange-space-strategy{
         background-color: #FFB700;
@@ -404,8 +623,9 @@ p{
     }
     .section-benefit{
         background-image: url('/images/background-1.webp');
-        height: 50vh; 
+        height: 25vh; 
         background-size: cover;
+        background-position: bottom;
     }
     .padding-bespoke{
         padding-top: 300px;
@@ -423,9 +643,143 @@ p{
     .h2-investa{
         padding-top: 120px;line-height: 1.3em;
     }
+    .thumbnail-video{
+        background-color: #003D79;
+        height: 220px;
+    }
+    .thumbnail-image{
+        margin: 20px;
+        padding-left: 0px;
+        max-height: 180px;
+    }
+    p{
+        color: #323334;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+    .dropdown-menu {
+        width: 100vw;
+    }
+    .dropdown-menu a .d-flex {
+        transition: all 0.5s;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: flex;
+    }
+    .dropdown-toggle::after {
+        display: none !important;
+    }
+    .dropdown-toggle[aria-expanded="true"] i {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
 }
 
-@media screen and (min-width: 768px) and ( max-width: 1200px) {
+@media screen and (min-width: 325px) and (max-width: 768px) {
+    .subheadline_outlook{
+        width: 100%;
+    }
+    .contact-info-text::before{
+        content: '';
+        display: inline-block;
+        width: 48%;
+        height: 2px;
+        background-color: #B6B8BA;
+        margin-right: 10px;
+        bottom: 5px;
+        position: relative;
+    }
+    .highlight-yellow {
+        display: inline-block;
+        border-bottom: 5px solid #f5c517;
+        padding-bottom: 0px;
+    }
+    .overlay-text {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0%, -100%);
+        text-align: left;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+    }
+    
+    .overlay-text p{
+        font-weight: bold;
+        color: white; 
+    }
+    .orange-space{
+        background-color: #FFB700;
+        height: 47vh;
+    }
+    .orange-space-strategy{
+        background-color: #FFB700;
+        height: 60vh;
+    }
+    .section-benefit{
+        background-image: url('/images/background-1.webp');
+        height: 25vh; 
+        background-size: cover;
+        background-position: bottom;
+    }
+    .padding-bespoke{
+        padding-top: 300px;
+    }
+    .product-section{
+        background-image: url('/images/background-3.webp');
+        height: 50vh; 
+        background-size: cover;
+    }
+    .bg-open-doors{
+        background-image: url('/images/background-2.webp');
+        height: 30vh;
+        background-size: cover;
+    }
+    .h2-investa{
+        padding-top: 120px;line-height: 1.3em;
+    }
+    .thumbnail-video{
+        background-color: #003D79;
+        height: 220px;
+    }
+    .thumbnail-image{
+        margin: 20px;
+        padding-left: 0px;
+        max-height: 180px;
+    }
+    p{
+        color: #323334;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+    }
+    .dropdown-menu {
+        width: 100vw;
+    }
+    .dropdown-menu a .d-flex {
+        transition: all 0.5s;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: contents;
+    }
+    .dropdown-toggle::after {
+        display: none !important;
+    }
+    .dropdown-toggle[aria-expanded="true"] i {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+}
+
+@media screen and (min-width: 770px) and ( max-width: 1025px) {
+    .navbar-expand-lg .navbar-nav{
+        flex-direction: row !important;
+    }
+    .subheadline_outlook{
+        width: 50%;
+    }
     .carousel-caption{
         bottom: 0;
         top: 20% !important;
@@ -433,7 +787,7 @@ p{
     }
     .orange-space{
         background-color: #FFB700;
-        height: 40vh;
+        height: 53vh;
     }
     .orange-space-strategy{
         background-color: #FFB700;
@@ -441,8 +795,9 @@ p{
     }
     .section-benefit{
         background-image: url('/images/background-1.webp');
-        height: 25vh; 
+        height: 30vh; 
         background-size: cover;
+        background-position: bottom;
     }
     .padding-bespoke{
         padding-top: 160px;
@@ -467,4 +822,130 @@ p{
     .h2-investa{
         padding-top: 25px;line-height: 1.3em;
     }
+    .thumbnail-video{
+        background-color: #003D79;
+        height: 310px;
+    }
+    .thumbnail-image{
+        margin: 50px;
+        padding-left: 0px;
+        max-height: 225px;
+    }
+    .dropdown-menu {
+        width: 100vw;
+    }
+    .dropdown-menu a .d-flex {
+        transition: all 0.5s;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: flex;
+    }
+    .dropdown-toggle::after {
+        display: none !important;
+    }
+    .dropdown-toggle[aria-expanded="true"] i {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+    .right-color-block {
+        width: 200px; /* adjust width as needed */
+        background: linear-gradient(to right, #ffb800 0 20%, #003a7b 20% 100%);
+        z-index: 0;
+    }
+}
+@media screen and (min-width: 1026px) and ( max-width: 1440px) {
+    .thumbnail-video{
+        background-color: #003D79;
+        height: 410px;
+    }
+    .thumbnail-image{
+        margin: 50px;
+        padding-left: 100px;
+        max-height: 300px;
+    }
+    .dropdown-menu {
+        width: 100vw;
+    }
+    .dropdown-menu a .d-flex {
+        transition: all 0.5s;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: flex;
+    }
+    .dropdown-toggle::after {
+        display: none !important;
+    }
+    .dropdown-toggle[aria-expanded="true"] i {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+    .right-color-block {
+        width: 200px; /* adjust width as needed */
+        background: linear-gradient(to right, #ffb800 0 20%, #003a7b 20% 100%);
+        z-index: 0;
+    }
+    .orange-space{
+        background-color: #FFB700;
+        height: 54vh;
+    }
+    .orange-space-strategy{
+        background-color: #FFB700;
+        height: 60vh;
+    } 
+    .section-benefit{
+        background-image: url('/images/background-1.webp');
+        height: 50vh; 
+        background-size: cover;
+    }
+    
+}
+@media screen and (min-width: 1445px) and ( max-width: 2560px) {
+    .orange-space{
+        background-color: #FFB700;
+        height: 30vh;
+    }
+    .orange-space-strategy{
+        background-color: #FFB700;
+        height: 60vh;
+    }
+    .section-benefit{
+        background-image: url('/images/background-1.webp');
+        height: 40vh; 
+        background-size: cover;
+        background-position: bottom;
+    }
+    .thumbnail-video{
+        background-color: #003D79;
+        height: 410px;
+    }
+    .thumbnail-image{
+        margin: 50px;
+        padding-left: 100px;
+        max-height: 300px;
+    }
+    .dropdown-menu {
+        width: 100vw;
+    }
+    .dropdown-menu a .d-flex {
+        transition: all 0.5s;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: flex;
+    }
+    .dropdown-toggle::after {
+        display: none !important;
+    }
+    .dropdown-toggle[aria-expanded="true"] i {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+    .right-color-block {
+        width: 200px; /* adjust width as needed */
+        background: linear-gradient(to right, #ffb800 0 20%, #003a7b 20% 100%);
+        z-index: 0;
+    }
+}
+
+.highcharts-credits{
+    display: none !important;
 }

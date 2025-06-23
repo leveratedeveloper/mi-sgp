@@ -12,7 +12,7 @@
             <h2 class="h2-bold text-white highlight-yellow">Mandiri Investment</h2>
             <div class="col-md-4">
                 <p class="text-white">
-                Mandiri Investment is a Singapore based asset management company with a focus on Indonesia. A part of the Bank Mandiri group, the company holds a Capital Market Services License under the regulatory supervision of the Monetary Authority of Singapore.
+                Mandiri Investment is a Singapore based asset management company with a focus on Indonesia. A part of the Bank Mandiri group, the company holds a Capital Market Services License under the regulatory supervision of the Monetary Authority of Singapore. The company manages a total AUM of SG$ 1.05 Billion as of June 2024 across 6 funds.
                 </p>
             </div>
         </div>
@@ -29,7 +29,7 @@
                         <h2 class="text-white highlight-yellow">Mandiri Investment</h2>
                         <div class="col-md-4">
                             <p class="text-white">
-                            Mandiri Investment is a Singapore based asset management company with a focus on Indonesia. A part of the Bank Mandiri group, the company holds a Capital Market Services License under the regulatory supervision of the Monetary Authority of Singapore.
+                            Mandiri Investment is a Singapore based asset management company with a focus on Indonesia. A part of the Bank Mandiri group, the company holds a Capital Market Services License under the regulatory supervision of the Monetary Authority of Singapore. The company manages a total AUM of SG$ 1.05 Billion as of June 2024 across 6 funds.
                             </p>
                         </div>
                     </div>

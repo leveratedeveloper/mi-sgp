@@ -30,6 +30,14 @@ Route::get('/our-strategy', function () {
     return view('our-strategy');
 })->name('strategy');
 
+Route::get('/outlook', function () {
+    return view('outlook');
+})->name('outlook');
+
+Route::get('/solutions', function () {
+    return view('solutions');
+})->name('solutions');
+
 Route::get('/contact-us', function () {
     return view('contact-us');
 })->name('contact');

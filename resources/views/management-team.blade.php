@@ -120,7 +120,7 @@
                                                         </div>
                                                  </div>
                                                 <!-- desktop -->
-                                                <div class="col-md-3 p-4 d-none d-md-block">
+                                                <!-- <div class="col-md-3 p-4 d-none d-md-block">
                                                     <a href="#" data-bs-target="#modalKevin" data-bs-toggle="modal" class="img-hover-zoom">
                                                         <img src="{{ asset('images/management_kevin.webp') }}" alt="" class="img-fluid">
                                                     </a>
@@ -128,9 +128,9 @@
                                                         <h4 class="color-blue-mandiri">Kevin Wijaya</h4>
                                                         <p>Chief Investment Officer</p>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                                 <!-- mobile -->
-                                                <div class="col-6 d-md-none d-sm-block mb-3">
+                                                <!-- <div class="col-6 d-md-none d-sm-block mb-3">
                                                     <a href="#" data-bs-target="#modalKevin" data-bs-toggle="modal" class="img-hover-zoom">
                                                             <img src="{{ asset('images/management_kevin.webp') }}" alt="" class="img-fluid">
                                                         </a>
@@ -139,8 +139,8 @@
                                                     <div class="pt-4 text-left">
                                                         <h4 class="color-blue-mandiri">Kevin Wijaya</h4>
                                                         <p>Chief Investment Officer</p>
-                                                        </div>
-                                                 </div>
+                                                    </div>
+                                                 </div> -->
                                             </div>
                                         </div>
                                     </div>

@@ -16,8 +16,8 @@
                         <img src="{{ asset('images/slides/slide-1.webp') }}" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block text-start">
                                 <div class="col-lg-8 col-md-12">
-                                <h2 class="display-4 text-white">Gateway to Southeast <br> Asia's <span class="highlight-yellow">Largest & Fastest </span> <br> Growing Economy</h2>
-                                    <div class="col-lg-6 col-8">
+                                <h2 class="display-5 text-white fw-bold">Gateway to Southeast <br class="d-none"> Asia's <span class="highlight-yellow">Largest & Fastest </span> <br> Growing Economy</h2>
+                                    <div class="col-lg-9 col-8">
                                         <p class="text-white">For over a decade, we’ve been committed to providing investor access to exciting opportunities in Indonesia, supported by the country’s largest bank.</p>
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@
     <div class="row">
         <div class="col-12 px-5" style="background-image: url('{{ asset('images/slides/mobile_home_hero.webp') }}');height: 100%; background-size: cover">
             <!-- <img src="{{ asset('images/slides/mobile_home_hero.webp') }}" alt="" class="img-fluid"> -->
-            <h2 class="display-4 text-white" style="padding-top: 170px">Gateway to Southeast <br> Asia's <span class="highlight-yellow">Largest & Fastest </span> <br> Growing Economy</h2>
+            <h2 class="display-6 text-white fw-bolder" style="padding-top: 170px">Gateway to Southeast <br class="d-none"> Asia's <span class="highlight-yellow">Largest & Fastest </span> <br> Growing Economy</h2>
             <p class="text-white pb-5 mb-4">For over a decade, we've been committed to providing investor access to exciting opportunities in Indonesia, supported by the country’s largest bank.</p>
             
         </div>
@@ -52,20 +52,24 @@
     
 
 <div class="container-fluid d-none d-md-block">
-    <div class="row position-relative z-1">
-        <div class="col-md-8" style="background-color: #003D79;height: 5vh">&nbsp;</div>
-        <div class="col-md-4" style="background-color: #FFB700;height: 5vh">&nbsp;</div>
+    <div class="row">
+        <div class="col-md-8 pe-0">
+            <div style="background-color: #003D79;height: 5vh"></div>
+        </div>
+        <div class="col-md-4 ps-0">
+            <div style="background-color: #FFB700;height: 5vh"></div>
+        </div>
     </div>
     <div class="row">
         <div class="col-md-8 col-lg-8">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2"></div>
-                    <div class="col-md-10 d-flex flex-column justify-content-center">
-                        <h2 class="display-5 fw-bolder" style="padding-top: 120px;line-height: 1.3em;">
-                            <span class="highlight-yellow">Unlocking</span> The Jewel of <br> The Equator.
+                    <div class="col-md-10 d-flex flex-column justify-content-center mb-lg-5 mb-md-5 pb-lg-5 pb-md-3">
+                        <h2 class="display-5 fw-bolder" style="padding-top: 80px;line-height: 1.3em;">
+                            <span class="highlight-yellow">Unlocking</span> The Jewel of <br class="d-lg-block d-md-none"> The Equator.
                         </h2>
-                        <p class="mt-4">
+                        <p class="mt-lg-1 mt-md-4">
                             As the world's 4th most populated country, Indonesia <br>has great potential waiting to be discovered.
                         </p>
                     </div>
@@ -73,7 +77,9 @@
             </div>
             
         </div>
-        <div class="col-md-4 col-lg-4 orange-space"></div>
+        <div class="col-md-4 col-lg-4 ps-0">
+            <div class="orange-space"></div>
+        </div>
     </div>
 </div>
 
@@ -165,111 +171,140 @@
         </div>
     </div>
 
- </div>
-
-<div class="row">
-    <div class="col-2" style="background-color: #FFB700;height: 64px"></div>
-    <div class="col-10"></div>
-</div>
-
-<div class="d-none d-md-block">
     <div class="row">
-        <div class="col-5 z-0" style="background-color: #003D79;height: 410px;position: absolute;"></div>
+        <div class="col-2 pe-0">
+            <div style="background-color: #FFB700;height: 64px"></div>
+        </div>
+        <div class="col-10"></div>
     </div>
-    <div class="container mb-5">
-        <div class="row py-5">
+
+    <div class="container-fluid d-none d-md-block">
+        <div class="row">
             <div class="col-lg-6 col-md-6">
-                <!-- <div class="embed-responsive embed-responsive-16by9"> -->
-                    <div>
+                <div class="thumbnail-video">
                     <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal">
-                    <img src="{{ asset('images/video-preview.webp') }}" class="img-fluid embed-responsive-item z-1 position-relative" alt="Woman gardening">
+                        <img src="{{ asset('images/video-preview.webp') }}" class="img-fluid embed-responsive-item z-1 position-relative thumbnail-image" alt="Woman gardening">
                     </a>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-6 py-3">
-                <h2 class="display-5 fw-bolder">Invest in Indonesia.<br>Invest with <br><span class="highlight-yellow">Mandiri Investment.</span></h2>
-                <p>We pave your way to unlock investment opportunities and guide you to achieve your goal by providing support through the synergy with Mandiri Group.</p>
+            <div class="col-lg-6 col-md-6">
+                <h2 class="fs-1 fs-md-5 fs-lg-3 fw-bolder">Invest in Indonesia.<br>Invest with <br><span class="highlight-yellow">Mandiri Investment.</span></h2>
+                <p class="pe-4">We pave your way to unlock investment opportunities and guide you to achieve your goal by providing support through the synergy with Mandiri Group.</p>
             </div>
-            <div class="col-lg-1 col-md-1"></div>
         </div>
     </div>
-</div>
 
-<!-- mobile -->
-<div class="d-md-none d-sm-block">
-    <div class="container-fluid">
+    <!-- <div class="container-fluid d-none d-md-block">
         <div class="row">
+            <div class="col-5 z-0" style="background-color: #003D79;height: 410px;position: absolute;">
+                
+            </div>
+        </div>
+        <div class="container mb-5">
+            <div class="row py-5">
+                <div class="col-lg-6 col-md-6">
+                        <div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        <img src="{{ asset('images/video-preview.webp') }}" class="img-fluid embed-responsive-item z-1 position-relative" alt="Woman gardening">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 py-3">
+                    <h2 class="display-5 fw-bolder">Invest in Indonesia.<br>Invest with <br><span class="highlight-yellow">Mandiri Investment.</span></h2>
+                    <p>We pave your way to unlock investment opportunities and guide you to achieve your goal by providing support through the synergy with Mandiri Group.</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+   
+
+    <!-- mobile -->
+    <div class="d-md-none d-sm-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal">
+                    <img src="{{ asset('images/video-preview-mobile.webp') }}" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-12 p-5">
+                    <h2 class="fs-1 fs-md-5 fs-lg-3 fw-bolder">Invest in Indonesia.<br>Invest with <br><span class="highlight-yellow">Mandiri Investment.</span></h2>
+                    <p>We pave your way to unlock investment opportunities and guide you to achieve your goal by providing support through the synergy with Mandiri Group.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="row d-none d-md-block">
             <div class="col-12">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal">
-                <img src="{{ asset('images/video-preview-mobile.webp') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-12 p-5">
-                <h2 class="display-5 fw-bolder">Invest in Indonesia.<br>Invest with <br><span class="highlight-yellow">Mandiri Investment.</span></h2>
-                <p>We pave your way to unlock investment opportunities and guide you to achieve your goal by providing support through the synergy with Mandiri Group.</p>
+                <div class="white-spacing-50"></div>
             </div>
         </div>
-    </div>
-</div>
 
-<div class="row d-none d-md-block">
-    <div class="col-12">
+        <div class="container-fluid d-none d-md-block">
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <div>
+                        <img src="{{ asset('images/logo-mandiri-about-us.png') }}" alt="" width="264" class="img-fluid">
+                        <h2 class="fs-1 fs-md-5 fs-lg-3 d-inline">we open <span class="highlight-yellow">doors.</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4"></div>
+                <div class="col-xl-6 col-lg-7 col-md-7">
+                <p>Mandiri Investment is a subsidiary of PT Mandiri Manajemen Investasi (known as “Mandiri Investasi”), the largest local fund house in Indonesia.</p>
+                <p>Presently, Mandiri Investasi manages mutual funds and discretionary accounts. Both offices are also now working on Private Equity opportunities to access Indonesia’s real sector.</p>
+                <p>By going offshore, Mandiri Investasi will be able to provide a more investor friendly platform through which they can invest into one of the fastest growing economies in Asia.</p>
+                    <div class="my-3">
+                        <a href="{{ route('about') }}" class="link-offset-2 link-underline link-underline-opacity-0 link-sky-blue shortcut_link">see more 
+                            <img src="{{ asset('images/arrow-right.svg') }}" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-8">
+                    <img src="{{ asset('images/background-2.webp') }}" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile -->
+    <div class="container-fluid d-md-none d-sm-block" style="background-image: url('{{ asset('images/background-grey-mobile.webp') }}');height: 100%; background-size: cover;background-repeat:no-repeat;background-position: right;">
         <div class="white-spacing-50"></div>
+        <div class="row">
+            <div class="col-12 px-5">
+                <img src="{{ asset('images/logo-mandiri-about-us-mobile.webp') }}" alt="" width="100" class="img-fluid">
+            </div>
+            <div class="col-12 px-5 py-3">
+                <h2 class="fs-1 fs-md-5 fs-lg-3 d-inline">we open <span class="highlight-yellow">doors.</span></h2>
+                <p>Mandiri Investment is a subsidiary of PT Mandiri Manajemen Investasi (known as “Mandiri Investasi”), the largest local fund house in Indonesia.</p>
+                <p>Presently, Mandiri Investasi manages mutual funds and discretionary accounts. Both offices are also now working on Private Equity opportunities to access Indonesia’s real sector.</p>
+                <p>By going offshore, Mandiri Investasi will be able to provide a more investor friendly platform through which they can invest into one of the fastest growing economies in Asia.</p>
+                <div class="my-3">
+                    <a href="{{ route('about') }}" class="link-offset-2 link-underline link-underline-opacity-0 link-sky-blue shortcut_link">see more 
+                        <img src="{{ asset('images/arrow-right.svg') }}" alt="">
+                    </a>
+                </div>
+                <img src="{{ asset('images/mobile_home_we-open-doors.webp') }}" alt="" class="img-fluid">
+            </div>
+        </div>
     </div>
-</div>
 
-<div class="container-fluid d-none d-md-block">
-    <div class="row">
-        <div class="col-lg-6 col-md-12">
-            <div>
-                <img src="{{ asset('images/logo-mandiri-about-us.png') }}" alt="" width="264" class="img-fluid">
-                <h2 class="display-5 d-inline">we open <span class="highlight-yellow">doors.</span></h2>
-            </div>
-        </div>
-        <div class="col-md-5"></div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4 col-md-4"></div>
-        <div class="col-lg-4 col-md-6">
-        <p>Mandiri Investment is a subsidiary of PT Mandiri Manajemen Investasi (known as “Mandiri Investasi”), the largest local fund house in Indonesia.</p>
-        <p>Presently, Mandiri Investasi manages mutual funds and discretionary accounts. Both offices are also now working on Private Equity opportunities to access Indonesia’s real sector.</p>
-        <p>By going offshore, Mandiri Investasi will be able to provide a more investor friendly platform through which they can invest into one of the fastest growing economies in Asia.</p>
-            <div class="my-3">
-                <a href="{{ route('about') }}" class="link-offset-2 link-underline link-underline-opacity-0 link-sky-blue shortcut_link">see more 
-                    <img src="{{ asset('images/arrow-right.svg') }}" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-2"></div>
-    </div>
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-8 bg-open-doors">
-        </div>
-    </div>
-</div>
+ </div>
 
-<!-- mobile -->
-<div class="container-fluid d-md-none d-sm-block" style="background-image: url('{{ asset('images/background-grey-mobile.webp') }}');height: 100%; background-size: cover;background-repeat:no-repeat;background-position: right;">
-    <div class="white-spacing-50"></div>
-    <div class="row">
-        <div class="col-12 px-5">
-            <img src="{{ asset('images/logo-mandiri-about-us-mobile.webp') }}" alt="" width="100" class="img-fluid">
-        </div>
-        <div class="col-12 px-5 py-3">
-            <h2 class="display-5 d-inline">we open <span class="highlight-yellow">doors.</span></h2>
-            <p>Mandiri Investment is a subsidiary of PT Mandiri Manajemen Investasi (known as “Mandiri Investasi”), the largest local fund house in Indonesia.</p>
-            <p>Presently, Mandiri Investasi manages mutual funds and discretionary accounts. Both offices are also now working on Private Equity opportunities to access Indonesia’s real sector.</p>
-            <p>By going offshore, Mandiri Investasi will be able to provide a more investor friendly platform through which they can invest into one of the fastest growing economies in Asia.</p>
-            <div class="my-3">
-                <a href="{{ route('about') }}" class="link-offset-2 link-underline link-underline-opacity-0 link-sky-blue shortcut_link">see more 
-                    <img src="{{ asset('images/arrow-right.svg') }}" alt="">
-                </a>
-            </div>
-            <img src="{{ asset('images/mobile_home_we-open-doors.webp') }}" alt="" class="img-fluid">
-        </div>
-    </div>
-</div>
+
+
+
+
+
 
 <!-- Modal -->
 <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
@@ -289,3 +324,36 @@
 </div>
 
 @endsection
+
+@push('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('[data-bs-toggle="dropdown"]');
+        const icon = toggle.querySelector('.dropdown-icon');
+
+        dropdown.addEventListener('show.bs.dropdown', () => {
+        if (icon) {
+            icon.classList.remove('bi-chevron-down');
+            icon.classList.add('bi-chevron-up');
+        }
+        });
+
+        dropdown.addEventListener('hide.bs.dropdown', () => {
+        if (icon) {
+            icon.classList.remove('bi-chevron-up');
+            icon.classList.add('bi-chevron-down');
+        }
+        });
+    });
+    });
+    // Stop video when the modal is closed
+    var videoModal = document.getElementById('videoModal');
+    videoModal.addEventListener('hidden.bs.modal', function (event) {
+        var videoPlayer = document.getElementById('videoPlayer');
+        videoPlayer.src = videoPlayer.src;
+    });
+</script>
+@endpush
