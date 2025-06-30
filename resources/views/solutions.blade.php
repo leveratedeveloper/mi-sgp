@@ -10,12 +10,12 @@
 
     <!-- Text overlay -->
     <div class="overlay-content">
-      <small class="fs-4 fw-bold">Solutions</small>
+      <small class="fs-4" style="font-weight: 500">Solutions</small>
       <h2 class="display-5 text-white">We Open Path to</h2>
-      <h2 class="display-5 text-white"><span class="highlight-yellow">Empower Your Growth in</span></h2>
+      <h2 class="display-5 text-white"><span class="highlight-yellow">Empower Your Growth</span> in</h2>
       <h2 class="display-5 text-white">Indonesia's Thriving Market</h2>
       <p class="mt-3 text-white subheadline_outlook">
-      We provide investment strategies designed to optimize growth in high liquidity solutions.
+      We provide investment strategies designed to optimize growth <br> in high liquidity solutions.
       </p>
     </div>
   </div>
@@ -44,7 +44,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12 text-center">
-            <h2>We Stand on <span class="highlight-yellow">Strong Foundation</span></h2>
+            <h2>We Stand on <span class="highlight-yellow">Strong Foundation.</span></h2>
             <p class="my-3">Built on trust, stability, and a legacy of growth.</p>
         </div>
     </div>
@@ -57,18 +57,18 @@
             <div class="row gx-5">
                 <div class="col-12 col-lg-4 mb-lg-0 mb-4">
                     <img src="{{ asset('images/Monetary_Authority_of_Singapore.png') }}" alt="" height="55" class="mb-3">
-                    <h4>Holding Capital Market Services (CMS) License</h4>
+                    <h4>Holding Capital Market <br> Services (CMS) License</h4>
                     <p>We operate with full compliance and transparency, ensuring the highest trust & security for your investment.</p>
                 </div>
                 <div class="col-12 col-lg-4 mb-lg-0 mb-4">
                     <img src="{{ asset('images/Aum.png') }}" alt="" height="55" class="mb-3">
-                    <h4>Strong total AUM across 6 funds as of June 2024</h4>
+                    <h4>Strong total AUM across <br> 6 funds as of June 2024</h4>
                     <p>With a strong & growing portfolio of SGD 1 billion, we deliver consistent result & acquire significant opportunities effectively.</p>
                 </div>
                 <div class="col-12 col-lg-4 mb-lg-0 mb-4">
-                    <img src="{{ asset('images/Logo-BMRI.webp') }}" alt="" height="55" class="mb-3">
-                    <h4>Part of The Largest State Owned Bank in Indonesia.</h4>
-                    <p>The fund management company, also known as Mandiri Investasi, which was established in October 26th 2004 following a corporate spin-off from PT Mandiri Sekuritas. Currently the company is one of the largest fund manager in Indonesia with track record built since 1993.</p>
+                    <img src="{{ asset('images/logo-mandiri-bottom.png') }}" alt="" height="55" class="mb-3">
+                    <h4>Part of The Largest State <br> Owned Bank in Indonesia.</h4>
+                    <p>As a supporting role of Bank Mandiri, we benefit from unparalleled financial backing, extensive market expertise, & a strong network that strengthen our capability to serve you.</p>
                 </div>
             </div>
         </div>
