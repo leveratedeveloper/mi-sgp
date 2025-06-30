@@ -82,12 +82,12 @@
         <div class="col-lg-1"></div>
         <div class="col-lg-5">
             <h2>Growth Driven <br> <span class="highlight-yellow">Curated Solutions.</span></h2>
-            <p class="my-3">We are dedicated to walk you in a secure & reliable path. So you can grow your wealth with peace of mind.</p>
+            <p class="mt-3 mb-4">We are dedicated to walk you in a secure & reliable path. So you can grow your wealth with peace of mind.</p>
             <div class="row g-0">
                 <div class="col-3 col-md-1">
                     <img src="{{ asset('images/money-market.png') }}" class="img-fluid" alt="">
                 </div>
-                <div class="col-9 col-md-11 px-2 mb-4">
+                <div class="col-9 col-md-11 px-2 mb-3">
                     <h4>Money Market</h4>
                     <p>Take the advantage of investing in Indonesia as a thriving & growing market. Get an optimal growth while remaining highly liquid.</p>
                 </div>
@@ -96,16 +96,16 @@
                 <div class="col-3 col-md-1">
                     <img src="{{ asset('images/impact-funds.png') }}" class="img-fluid" alt="">
                 </div>
-                <div class="col-9 col-md-11 px-2 mb-4">
+                <div class="col-9 col-md-11 px-2 mb-3">
                     <h4>Impact Funds</h4>
-                    <p>Take the advantage of investing in Indonesia as a thriving & growing market. Get an optimal growth while remaining highly liquid.</p>
+                    <p>Lead your wealth to empower change in Indonesia. Bring light towards the Indonesian community as a whole.</p>
                 </div>
             </div>
             <div class="row g-0">
                 <div class="col-3 col-md-1">
                     <img src="{{ asset('images/bespoke-solutions.png') }}" class="img-fluid" alt="">
                 </div>
-                <div class="col-9 col-md-11 px-2 mb-4">
+                <div class="col-9 col-md-11 px-2 mb-3">
                     <h4>Bespoke Solutions</h4>
                     <p>Tailor your investment strategy to boost growth while remaining productive. We are ready to put your needs at the center of our solutions.</p>
                 </div>
@@ -123,7 +123,7 @@
         <div class="col-12 text-center">
             <h6>Money Market</h6>
             <h2>Optimal Growth, <span class="highlight-yellow">Highly Liquid</span></h2>
-            <p class="my-2">Grow your funds securely and optimally.</p>
+            <p class="my-3">Grow your funds securely and optimally.</p>
         </div>
     </div>
 </div>
@@ -207,7 +207,7 @@
 <div class="container empower_change">
     <div class="row align-items-center">
         <div class="col-lg-1"></div>
-        <div class="col-lg-4 mt-lg-0 mt-5 order-2 order-md-1">
+        <div class="col-lg-4 mt-lg-0 mt-5 order-2 order-md-1 pe-2">
             <h6>Bespoke Solutions</h6>
             <h2><span class="highlight-yellow">Personalize</span> to Your Needs.</h2>
             <p class="my-2">Whether you're looking for growth, preservation, or optimizing productive funds, we're here for you. Backed by generations of expertise and a diverse range of solutions, we help you identify opportunities, manage risks, and optimize your investment strategy.</p>
@@ -215,7 +215,7 @@
                 <img src="{{ asset('images/contact-us.webp') }}" height="25" alt="">
             </a>
         </div>
-        <div class="col-lg-1"></div>
+        <div class="col-lg-1 order-2 order-md-1"></div>
         <div class="col-lg-6 order-1 order-md-2">
             <img src="{{ asset('images/personalized.webp') }}" class="img-fluid" alt="">
         </div>
