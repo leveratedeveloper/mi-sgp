@@ -123,7 +123,7 @@
         <div class="col-12 text-center">
             <h6>Money Market</h6>
             <h2>Optimal Growth, <span class="highlight-yellow">Highly Liquid</span></h2>
-            <p class="my-2">Built on trust, stability, and a legacy of growth.</p>
+            <p class="my-2">Grow your funds securely and optimally.</p>
         </div>
     </div>
 </div>
@@ -180,7 +180,7 @@
 </div>
 
 <div class="container empower_change">
-    <div class="row">
+    <div class="row align-items-center">
         <div class="col-lg-6">
             <img src="{{ asset('images/empower-change.webp') }}" class="img-fluid" alt="">
         </div>
@@ -205,7 +205,7 @@
 </div>
 
 <div class="container empower_change">
-    <div class="row">
+    <div class="row align-items-center">
         <div class="col-lg-1"></div>
         <div class="col-lg-4 mt-lg-0 mt-5 order-2 order-md-1">
             <h6>Bespoke Solutions</h6>
@@ -222,17 +222,17 @@
     </div>
 </div>
 
-<div class="container money_market">
+<div class="container unique_advantage">
     <div class="row">
         <div class="col-12 text-center">
             <h6>Our Unique Advantage</h6>
             <h2>Grow with Indonesia, <br> <span class="highlight-yellow">Through Indonesians.</span></h2>
-            <p class="my-2">Grow with us-invest alongside those who know Indonesia best.</p>
+            <p class="my-2">Grow with us&mdash;invest alongside those who know Indonesia best.</p>
         </div>
     </div>
 </div>
 
-<div class="container strong_foundation">
+<div class="container grow_indonesia">
     <div class="row">
         <div class="col-lg-1"></div>
         <div class="col-lg-10">
@@ -292,6 +292,9 @@
         <script src="https://code.highcharts.com/modules/stock.js"></script>
         <script>
             const sampleData = [
+                [Date.UTC(2024, 7, 4), 1.4100],
+                [Date.UTC(2024, 8, 4), 1.4100],
+                [Date.UTC(2024, 9, 4), 1.4100],
                 [Date.UTC(2024, 10, 4), 1.4100],
                 [Date.UTC(2024, 10, 11), 1.4125],
                 [Date.UTC(2024, 10, 18), 1.4201],
@@ -307,9 +310,26 @@
                 [Date.UTC(2025, 0, 27), 1.4500],
                 [Date.UTC(2025, 1, 3), 1.4777]
             ];
+        Highcharts.setOptions({
+            lang: {
+                rangeSelectorFrom: 'From',
+                rangeSelectorTo: 'To'
+            }
+        });
         Highcharts.stockChart('investmentChart', {
             rangeSelector: {
-                selected: 1
+                selected: 1,
+                inputEnabled: true,
+                inputStyle: {
+                    color: '#444',
+                    fontWeight: 'bold'
+                },
+            },
+            chart: {
+                height: 300
+            },
+            navigator: {
+                enabled: false
             },
             title: {
                 text: ''
@@ -317,6 +337,7 @@
             series: [{
                 name: 'IDR',
                 data: sampleData,
+                color: '#70CC80',
                 tooltip: {
                     valueDecimals: 4
                 }

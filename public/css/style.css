@@ -20,6 +20,13 @@
     src: url('../fonts/Myriad-Pro-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'myriad-pro';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Myriad Pro Semibold.ttf') format('truetype');
+}
+
 body{
     font-family: "myriad-pro", sans-serif;
     overflow-x: hidden;
@@ -46,7 +53,7 @@ body{
 h2{
     color: #003D79;
     font-family: "myriad-pro", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -493,7 +500,7 @@ p{
 }
 
 .headline {
-    font-weight: bold;
+    font-weight: 500;
     font-size: 2rem;
     color: #003366;
 }
@@ -566,6 +573,10 @@ p{
     color: #003D79;
     margin-bottom: 5px;
 }
+.unique_advantage{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
 .empower_change{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -578,6 +589,10 @@ p{
 .grow-footer{
     border-left: 15px solid #ffc107;
     padding-left: 0;
+}
+.grow_indonesia{
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 @media screen and (max-width: 320px) {
     .subheadline_outlook{
