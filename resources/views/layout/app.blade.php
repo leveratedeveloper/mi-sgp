@@ -41,7 +41,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   
         <!-- Styles -->
-        <link href="{{ asset('css/style-new.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
         @livewireStyles
     </head>
     <body class="antialiased">
