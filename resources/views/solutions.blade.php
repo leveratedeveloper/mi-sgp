@@ -5,19 +5,19 @@
  
 @section('content')
 <div class="my-3">&nbsp;</div>
-<div class="container overlay-section my-5 d-none d-md-block">
-    <img src="{{ asset('images/hero-solutions.webp') }}" class="img-fluid" alt="Solutions" />
+    <div class="container-fluid overlay-section d-none d-md-block">
+        <img src="{{ asset('images/hero-solutions.webp') }}" class="img-fluid" alt="Solutions" />
 
-    <!-- Text overlay -->
-    <div class="overlay-content">
-      <small class="fs-4" style="font-weight: 500">Solutions</small>
-      <h2 class="display-5 text-white">We Open Path to</h2>
-      <h2 class="display-5 text-white"><span class="highlight-yellow">Empower Your Growth</span> in</h2>
-      <h2 class="display-5 text-white">Indonesia's Thriving Market</h2>
-      <p class="mt-3 text-white subheadline_outlook">
-      We provide investment strategies designed to optimize growth <br> in high liquidity solutions.
-      </p>
-    </div>
+        <!-- Text overlay -->
+        <div class="overlay-content">
+        <small class="fs-4" style="font-weight: 500">Solutions</small>
+        <h2 class="display-5 text-white">We Open Path to</h2>
+        <h2 class="display-5 text-white"><span class="highlight-yellow">Empower Your Growth</span> in</h2>
+        <h2 class="display-5 text-white">Indonesia's Thriving Market</h2>
+        <p class="mt-3 text-white subheadline_outlook">
+        We provide investment strategies designed to optimize growth <br> in high liquidity solutions.
+        </p>
+        </div>
   </div>
 <div class="container-fluid"></div>
 
@@ -41,7 +41,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container strong_foundation">
     <div class="row">
         <div class="col-12 text-center">
             <h2>We Stand on <span class="highlight-yellow">Strong Foundation.</span></h2>
@@ -50,10 +50,10 @@
     </div>
 </div>
 
-<div class="container strong_foundation">
+<div class="containe-fluid">
     <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-10">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
             <div class="row gx-5">
                 <div class="col-12 col-lg-4 mb-lg-0 mb-4">
                     <img src="{{ asset('images/Monetary_Authority_of_Singapore.png') }}" alt="" height="55" class="mb-3">
@@ -72,15 +72,15 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-1"></div>
+        <div class="col-lg-2"></div>
         
     </div>
 </div>
 
-<div class="container growth_driven">
+<div class="container-fluid growth_driven">
     <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4">
             <h2>Growth Driven <br> <span class="highlight-yellow">Curated Solutions.</span></h2>
             <p class="mt-3 mb-4">We are dedicated to walk you in a secure & reliable path. So you can grow your wealth with peace of mind.</p>
             <div class="row g-0">
@@ -122,7 +122,7 @@
     <div class="row">
         <div class="col-12 text-center">
             <h6>Money Market</h6>
-            <h2>Optimal Growth, <span class="highlight-yellow">Highly Liquid</span></h2>
+            <h2>Optimal Growth, <span class="highlight-yellow">Highly Liquid.</span></h2>
             <p class="my-3">Grow your funds securely and optimally.</p>
         </div>
     </div>
@@ -179,7 +179,7 @@
     <div id="investmentChart"></div>
 </div>
 
-<div class="container empower_change">
+<div class="container-fluid empower_change">
     <div class="row align-items-center">
         <div class="col-lg-6">
             <img src="{{ asset('images/empower-change.webp') }}" class="img-fluid" alt="">
@@ -204,12 +204,12 @@
     </div>
 </div>
 
-<div class="container empower_change">
+<div class="container-fluid empower_change">
     <div class="row align-items-center">
         <div class="col-lg-1"></div>
         <div class="col-lg-4 mt-lg-0 mt-5 order-2 order-md-1 pe-2">
             <h6>Bespoke Solutions</h6>
-            <h2><span class="highlight-yellow">Personalize</span> to Your Needs.</h2>
+            <h2><span class="highlight-yellow">Personalized</span> to <br> Your Needs.</h2>
             <p class="my-2">Whether you're looking for growth, preservation, or optimizing productive funds, we're here for you. Backed by generations of expertise and a diverse range of solutions, we help you identify opportunities, manage risks, and optimize your investment strategy.</p>
             <a href="{{ route('contact') }}" target="_blank">
                 <img src="{{ asset('images/contact-us.webp') }}" height="25" alt="">
@@ -227,7 +227,7 @@
         <div class="col-12 text-center">
             <h6>Our Unique Advantage</h6>
             <h2>Grow with Indonesia, <br> <span class="highlight-yellow">Through Indonesians.</span></h2>
-            <p class="my-2">Grow with us&mdash;invest alongside those who know Indonesia best.</p>
+            <p class="my-3">Grow with us&mdash;invest alongside those who know Indonesia best.</p>
         </div>
     </div>
 </div>
