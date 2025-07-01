@@ -6,7 +6,7 @@
 @section('content')
 <div class="my-3">&nbsp;</div>
     <div class="container-fluid overlay-section d-none d-md-block">
-        <img src="{{ asset('images/hero-solutions.webp') }}" class="img-fluid" alt="Solutions" />
+        <img src="{{ asset('images/hero-solutions-1.webp') }}" class="img-fluid" alt="Solutions" />
 
         <!-- Text overlay -->
         <div class="overlay-content">
@@ -113,7 +113,7 @@
         </div>
         <div class="col-lg-2"></div>
         <div class="col-lg-4">
-            <img src="{{ asset('images/hands-paper.webp') }}" class="img-fluid d-md-block d-none" alt="">
+            <img src="{{ asset('images/hands-paper-1.webp') }}" class="img-fluid d-md-block d-none" alt="">
         </div>
     </div>
 </div>
@@ -182,7 +182,7 @@
 <div class="container-fluid empower_change">
     <div class="row align-items-center">
         <div class="col-lg-6">
-            <img src="{{ asset('images/empower-change.webp') }}" class="img-fluid" alt="">
+            <img src="{{ asset('images/empower-change-1.webp') }}" class="img-fluid" alt="">
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-4 mt-lg-0 mt-5">
@@ -217,7 +217,7 @@
         </div>
         <div class="col-lg-1 order-2 order-md-1"></div>
         <div class="col-lg-6 order-1 order-md-2">
-            <img src="{{ asset('images/personalized.webp') }}" class="img-fluid" alt="">
+            <img src="{{ asset('images/personalized-1.webp') }}" class="img-fluid" alt="">
         </div>
     </div>
 </div>
