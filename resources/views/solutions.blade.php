@@ -50,7 +50,7 @@
     </div>
 </div>
 
-<div class="containe-fluid">
+<div class="container-fluid px-4 px-lg-0">
     <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
@@ -77,7 +77,7 @@
     </div>
 </div>
 
-<div class="container-fluid growth_driven">
+<div class="container-fluid growth_driven px-4 px-lg-0">
     <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-4">
@@ -132,13 +132,13 @@
     <div class="row">
         <div class="col-12 col-lg-6">
             <h1>Investa Money Market Fund</h1>
-            <span class="text-muted">Last updated: February 5th, 2025 10:56 a.m. (GMT+8)</span>
+            <span class="text-muted fs-6">Last updated: February 5th, 2025 10:56 a.m. (GMT+8)</span>
         </div>
         <div class="col-6"></div>
     </div>
     <div class="row">
         <div class="col-lg-5"></div>
-        <div class="col-12 col-lg-7">
+        <div class="col-12 col-lg-7 mt-5 mt-lg-0">
             <!-- Include this within a .container in your page -->
             <div class="row align-items-end text-end">
             <!-- Growth -->
@@ -185,7 +185,7 @@
             <img src="{{ asset('images/empower-change-1.webp') }}" class="img-fluid" alt="">
         </div>
         <div class="col-lg-1"></div>
-        <div class="col-lg-4 mt-lg-0 mt-5">
+        <div class="col-lg-4 mt-lg-0 mt-5 px-5 px-lg-0">
             <h6>Indonesia Impact Fund</h6>
             <h2><span class="highlight-yellow">Empower Change</span> <br> in Indonesia.</h2>
             <p class="my-2">Support Indonesia Impact Fund's implementation of Sustainable Development Goals (SDGs) through:</p>
@@ -207,7 +207,7 @@
 <div class="container-fluid empower_change">
     <div class="row align-items-center">
         <div class="col-lg-1"></div>
-        <div class="col-lg-4 mt-lg-0 mt-5 order-2 order-md-1 pe-2">
+        <div class="col-lg-4 mt-lg-0 mt-5 order-2 order-md-1 pe-2 px-5 px-lg-0">
             <h6>Bespoke Solutions</h6>
             <h2><span class="highlight-yellow">Personalized</span> to <br> Your Needs.</h2>
             <p class="my-2">Whether you're looking for growth, preservation, or optimizing productive funds, we're here for you. Backed by generations of expertise and a diverse range of solutions, we help you identify opportunities, manage risks, and optimize your investment strategy.</p>
