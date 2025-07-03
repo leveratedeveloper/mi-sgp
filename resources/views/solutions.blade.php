@@ -67,7 +67,7 @@
                 </div>
                 <div class="col-12 col-lg-4 mb-lg-0 mb-4">
                     <img src="{{ asset('images/logo-mandiri-bottom.png') }}" alt="" height="55" class="mb-3">
-                    <h4>Part of The Largest State <br> Owned Bank in Indonesia.</h4>
+                    <h4>Part of The Largest State <br> Owned Bank in Indonesia</h4>
                     <p>As a supporting role of Bank Mandiri, we benefit from unparalleled financial backing, extensive market expertise, & a strong network that strengthen our capability to serve you.</p>
                 </div>
             </div>
@@ -82,7 +82,7 @@
         <div class="col-lg-2"></div>
         <div class="col-lg-4">
             <h2>Growth Driven <br> <span class="highlight-yellow">Curated Solutions</span></h2>
-            <p class="mt-3 mb-4">We are dedicated to walk you in a secure & reliable path. So you can grow your wealth with peace of mind.</p>
+            <p class="mt-3 mb-4">We are dedicated to walk you in a secure & reliable path. <br> So you can grow your wealth with peace of mind.</p>
             <div class="row g-0">
                 <div class="col-3 col-md-1">
                     <img src="{{ asset('images/money-market.png') }}" class="img-fluid" alt="">
@@ -190,11 +190,11 @@
             <h2><span class="highlight-yellow">Empower Change</span> <br> in Indonesia</h2>
             <p class="my-2">Support Indonesia Impact Fund's implementation of Sustainable Development Goals (SDGs) through:</p>
             <ul>
-                <li>Poverty Alleviation, Affordable Healthcare </li>
-                <li>High-Quality & Accessible Education </li>
-                <li>Increasing Women Participation</li>
-                <li>Sustainable Cities & Affordable Housing</li>
-                <li>Empowering Climate-Smart Innovations</li>
+                <li>Poverty Alleviation, Affordable Healthcare.</li>
+                <li>High-Quality & Accessible Education.</li>
+                <li>Increasing Women Participation.</li>
+                <li>Sustainable Cities & Affordable Housing.</li>
+                <li>Empowering Climate-Smart Innovations.</li>
             </ul>
             <a href="https://indonesiaimpactfund.com/" target="_blank">
                 <img src="{{ asset('images/learn-more.webp') }}" height="25" alt="">
@@ -209,7 +209,7 @@
         <div class="col-lg-1"></div>
         <div class="col-lg-4 mt-lg-0 mt-5 order-2 order-md-1 pe-2 px-5 px-lg-0">
             <h6>Bespoke Solutions</h6>
-            <h2><span class="highlight-yellow">Personalized</span> to <br> Your Needs</h2>
+            <h2><span class="highlight-yellow">Personalized</span> <br>to Your Needs</h2>
             <p class="my-2">Whether you're looking for growth, preservation, or optimizing productive funds, we're here for you. Backed by generations of expertise and a diverse range of solutions, we help you identify opportunities, manage risks, and optimize your investment strategy.</p>
             <a href="{{ route('contact') }}" target="_blank">
                 <img src="{{ asset('images/contact-us.webp') }}" height="25" alt="">
