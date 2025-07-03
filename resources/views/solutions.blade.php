@@ -44,7 +44,7 @@
 <div class="container strong_foundation">
     <div class="row">
         <div class="col-12 text-center">
-            <h2>We Stand on <span class="highlight-yellow">Strong Foundation.</span></h2>
+            <h2>We Stand on <span class="highlight-yellow">Strong Foundation</span></h2>
             <p class="my-3">Built on trust, stability, and a legacy of growth.</p>
         </div>
     </div>
@@ -81,7 +81,7 @@
     <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-4">
-            <h2>Growth Driven <br> <span class="highlight-yellow">Curated Solutions.</span></h2>
+            <h2>Growth Driven <br> <span class="highlight-yellow">Curated Solutions</span></h2>
             <p class="mt-3 mb-4">We are dedicated to walk you in a secure & reliable path. So you can grow your wealth with peace of mind.</p>
             <div class="row g-0">
                 <div class="col-3 col-md-1">
@@ -122,7 +122,7 @@
     <div class="row">
         <div class="col-12 text-center">
             <h6>Money Market</h6>
-            <h2>Optimal Growth, <span class="highlight-yellow">Highly Liquid.</span></h2>
+            <h2>Optimal Growth, <span class="highlight-yellow">Highly Liquid</span></h2>
             <p class="my-3">Grow your funds securely and optimally.</p>
         </div>
     </div>
@@ -187,14 +187,14 @@
         <div class="col-lg-1"></div>
         <div class="col-lg-4 mt-lg-0 mt-5 px-5 px-lg-0">
             <h6>Indonesia Impact Fund</h6>
-            <h2><span class="highlight-yellow">Empower Change</span> <br> in Indonesia.</h2>
+            <h2><span class="highlight-yellow">Empower Change</span> <br> in Indonesia</h2>
             <p class="my-2">Support Indonesia Impact Fund's implementation of Sustainable Development Goals (SDGs) through:</p>
             <ul>
                 <li>Poverty Alleviation, Affordable Healthcare </li>
                 <li>High-Quality & Accessible Education </li>
                 <li>Increasing Women Participation</li>
                 <li>Sustainable Cities & Affordable Housing</li>
-                <li>Empowering Climate-Smart Innovations.</li>
+                <li>Empowering Climate-Smart Innovations</li>
             </ul>
             <a href="https://indonesiaimpactfund.com/" target="_blank">
                 <img src="{{ asset('images/learn-more.webp') }}" height="25" alt="">
@@ -209,7 +209,7 @@
         <div class="col-lg-1"></div>
         <div class="col-lg-4 mt-lg-0 mt-5 order-2 order-md-1 pe-2 px-5 px-lg-0">
             <h6>Bespoke Solutions</h6>
-            <h2><span class="highlight-yellow">Personalized</span> to <br> Your Needs.</h2>
+            <h2><span class="highlight-yellow">Personalized</span> to <br> Your Needs</h2>
             <p class="my-2">Whether you're looking for growth, preservation, or optimizing productive funds, we're here for you. Backed by generations of expertise and a diverse range of solutions, we help you identify opportunities, manage risks, and optimize your investment strategy.</p>
             <a href="{{ route('contact') }}" target="_blank">
                 <img src="{{ asset('images/contact-us.webp') }}" height="25" alt="">
@@ -226,7 +226,7 @@
     <div class="row">
         <div class="col-12 text-center">
             <h6>Our Unique Advantage</h6>
-            <h2>Grow with Indonesia, <br> <span class="highlight-yellow">Through Indonesians.</span></h2>
+            <h2>Grow with Indonesia, <br> <span class="highlight-yellow">Through Indonesians</span></h2>
             <p class="my-3">Grow with us&mdash;invest alongside those who know Indonesia best.</p>
         </div>
     </div>
@@ -277,7 +277,7 @@
       <div class="content-box">
         <!-- Text content -->
         <div class="text-box">
-          <div class="headline">Solutions That Fits <span class="highlight-yellow">Your Vision.</span></div>
+          <div class="headline">Solutions That Fits <span class="highlight-yellow">Your Vision</span></div>
           <p class="mt-3 mt-lg-2">Our team of local experts and experienced asset manager is looking forward to hear your needs. Contact us today.</p>
         </div>
         <!-- Button -->
