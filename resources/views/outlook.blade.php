@@ -5,21 +5,21 @@
  
 @section('content')
 <div class="my-3">&nbsp;</div>
-<div class="container overlay-section my-5 d-none d-md-block">
-    <img src="{{ asset('images/hero-outlook.webp') }}" class="img-fluid" alt="Market Outlook" />
+    <div class="container-fluid overlay-section d-none d-md-block">
+        <img src="{{ asset('images/hero-market-outlook.webp') }}" class="img-fluid" alt="Market Outlook" />
 
-    <!-- Text overlay -->
-    <div class="overlay-content">
-      <small class="fs-4 fw-bold">Market Outlook</small>
-      <h2 class="display-5 text-white"><span class="highlight-yellow">Discover Emerging</span></h2>
-      <h2 class="display-5 text-white">Opportunities in Indonesia.</h2>
-      <p class="mt-3 text-white subheadline_outlook">
-        Gain a closer look at Indonesia through the eyes of experts. Discover emerging opportunities, 
-        and gain new perspective on navigating the South East Asia's largest & fastest growing economy.
-      </p>
-    </div>
+        <!-- Text overlay -->
+        <div class="overlay-content">
+          <small class="fs-4 fw-bold">Market Outlook</small>
+          <h2 class="display-5 text-white"><span class="highlight-yellow">Discover Emerging</span></h2>
+          <h2 class="display-5 text-white">Opportunities in Indonesia</h2>
+          <p class="mt-3 text-white subheadline_outlook">
+            Gain a closer look at Indonesia through the eyes of experts. Discover emerging opportunities, 
+            and gain new perspective on navigating the South East Asia's largest & fastest growing economy.
+          </p>
+        </div>
   </div>
-<div class="container-fluid"></div>
+<div class="container-fluid my-5"></div>
 
 <!-- mobile -->
 <div class="container-fluid d-md-none d-sm-block">
@@ -27,10 +27,10 @@
         <div class="col-12">
             <div class="card text-white border-0">
                 <img src="{{ asset('images/mobile-outlook.webp') }}" class="card-img" alt="...">
-                <div class="card-img-overlay px-5 overlay-content" style="padding-top: 150px">
+                <div class="card-img-overlay ps-5 overlay-content" style="padding-top: 100px">
                     <small class="fs-4 fw-bold">Market Outlook</small>
                     <h2 class="display-5 text-white"><span class="highlight-yellow">Discover Emerging</span></h2>
-                    <h2 class="display-5 text-white">Opportunities in Indonesia.</h2>
+                    <h2 class="display-5 text-white">Opportunities in Indonesia</h2>
                     <p class="text-white subheadline_outlook">
                         Gain a closer look at Indonesia through the eyes of experts. Discover emerging opportunities, 
                         and gain new perspective on navigating the South East Asia's largest & fastest growing economy.
@@ -103,9 +103,9 @@
     </div>
 
     <!-- Footer Controls -->
-    <div class="d-flex justify-content-between align-items-center mt-5">
+    <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center mt-5 gap-3">
       <!-- Results per page -->
-      <div class="d-flex align-items-center">
+      <div class="align-items-center d-md-flex d-none">
         <span class="me-2">Results per page</span>
         <select class="form-select w-auto">
           <option>3</option>
