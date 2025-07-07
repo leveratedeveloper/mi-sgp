@@ -2,7 +2,6 @@
  
 @section('title', 'Solutions')
  
- 
 @section('content')
 <div class="my-3">&nbsp;</div>
     <div class="container-fluid overlay-section d-none d-md-block">
@@ -132,7 +131,7 @@
     <div class="row">
         <div class="col-12 col-lg-6">
             <h1>Investa Money Market Fund</h1>
-            <span class="text-muted fs-6">Last updated: February 5th, 2025 10:56 a.m. (GMT+8)</span>
+            <span class="text-muted fs-6">Last updated: {{ \Carbon\Carbon::now()->format('F jS, Y g:i a') }} (GMT+8)</span>
         </div>
         <div class="col-6"></div>
     </div>
@@ -291,25 +290,47 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/modules/stock.js"></script>
         <script>
-            const sampleData = [
-                [Date.UTC(2024, 7, 4), 1.4100],
-                [Date.UTC(2024, 8, 4), 1.4100],
-                [Date.UTC(2024, 9, 4), 1.4100],
-                [Date.UTC(2024, 10, 4), 1.4100],
-                [Date.UTC(2024, 10, 11), 1.4125],
-                [Date.UTC(2024, 10, 18), 1.4201],
-                [Date.UTC(2024, 10, 25), 1.4355],
-                [Date.UTC(2024, 11, 2), 1.4450],
-                [Date.UTC(2024, 11, 9), 1.4503],
-                [Date.UTC(2024, 11, 16), 1.4589],
-                [Date.UTC(2024, 11, 23), 1.4705],
-                [Date.UTC(2024, 11, 30), 1.4777],
-                [Date.UTC(2025, 0, 6), 1.4680],
-                [Date.UTC(2025, 0, 13), 1.4565],
-                [Date.UTC(2025, 0, 20), 1.4401],
-                [Date.UTC(2025, 0, 27), 1.4500],
-                [Date.UTC(2025, 1, 3), 1.4777]
-            ];
+            const rawData = @json($values);
+            const dataWithoutHeader = rawData.slice(1);
+            const sampleData = convertToSampleData(dataWithoutHeader);
+            function convertToSampleData(data) {
+                return data.map(row => {
+                    const [dateStr, , navStr] = row;
+
+                    // Convert "28-Nov-14" to a Date object
+                    const [day, monthStr, yearStr] = dateStr.split("-");
+                    const monthMap = {
+                    Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
+                    Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11
+                    };
+                    const month = monthMap[monthStr];
+                    const year = parseInt(yearStr, 10) + 2000; // Convert "14" to 2014
+
+                    // Convert "1.000,75" to 1000.75
+                    const nav = parseFloat(navStr.replace('.', '').replace(',', '.'));
+
+                    return [Date.UTC(year, month, parseInt(day, 10)), nav];
+                });
+            }
+            // const sampleData = [
+            //     [Date.UTC(2024, 7, 4), 1.4100],
+            //     [Date.UTC(2024, 8, 4), 1.4100],
+            //     [Date.UTC(2024, 9, 4), 1.4100],
+            //     [Date.UTC(2024, 10, 4), 1.4100],
+            //     [Date.UTC(2024, 10, 11), 1.4125],
+            //     [Date.UTC(2024, 10, 18), 1.4201],
+            //     [Date.UTC(2024, 10, 25), 1.4355],
+            //     [Date.UTC(2024, 11, 2), 1.4450],
+            //     [Date.UTC(2024, 11, 9), 1.4503],
+            //     [Date.UTC(2024, 11, 16), 1.4589],
+            //     [Date.UTC(2024, 11, 23), 1.4705],
+            //     [Date.UTC(2024, 11, 30), 1.4777],
+            //     [Date.UTC(2025, 0, 6), 1.4680],
+            //     [Date.UTC(2025, 0, 13), 1.4565],
+            //     [Date.UTC(2025, 0, 20), 1.4401],
+            //     [Date.UTC(2025, 0, 27), 1.4500],
+            //     [Date.UTC(2025, 1, 3), 1.4777]
+            // ];
         Highcharts.setOptions({
             lang: {
                 rangeSelectorFrom: 'From',
