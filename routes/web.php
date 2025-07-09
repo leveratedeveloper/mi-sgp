@@ -36,6 +36,10 @@ Route::get('/outlook', function () {
     return view('outlook');
 })->name('outlook');
 
+Route::get('/outlook/{slug}', function () {
+    return view('outlook-detail');
+})->name('outlook.detail');
+
 Route::get('/solutions', function () {
     $values = Sheets::spreadsheet(env('GOOGLE_SHEET_ID'))
             ->sheet('Money Market MI Website')

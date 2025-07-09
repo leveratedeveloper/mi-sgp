@@ -68,7 +68,7 @@
       <!-- News Card 1 -->
       <div class="col-md-4">
         <div class="news-card">
-            <a href="#" class="text-decoration-none">
+            <a href="{{ route('outlook.detail', ['slug' => 'detail']) }}" class="text-decoration-none">
                 <img src="{{ asset('images/m-outlook-news1.webp') }}" alt="Tourism" class="img-fluid mb-3">
                 <h4 class="color-blue-mandiri pt-3 pb-2 news-title">Tourism Revival Fuels Indonesia's Economic Recovery</h4>
             </a>
@@ -81,7 +81,7 @@
       <div class="col-md-4">
         <div class="news-card">
             <a href="#" class="text-decoration-none">
-                <img src="{{ asset('images/m-outlook-news1.webp') }}" alt="Infrastructure" class="img-fluid mb-3">
+                <img src="{{ asset('images/news-2.webp') }}" alt="Infrastructure" class="img-fluid mb-3">
                 <h4 class="color-blue-mandiri pt-3 pb-2 news-title">Government’s Infrastructure Push Accelerates Growth</h4>
             </a>
           <p>Massive infrastructure projects enhance connectivity and support economic ambitions.</p>
@@ -93,7 +93,7 @@
       <div class="col-md-4">
         <div class="news-card">
             <a href="#" class="text-decoration-none">
-                <img src="{{ asset('images/m-outlook-news1.webp') }}" alt="Middle Class" class="img-fluid mb-3">
+                <img src="{{ asset('images/news-3.webp') }}" alt="Middle Class" class="img-fluid mb-3">
                 <h4 class="color-blue-mandiri pt-3 pb-2 news-title">Rising Middle Class Drives Domestic Consumption</h4>
             </a>
           <p>Indonesia’s middle class expected to reach 141 million by 2025, fueling domestic markets.</p>
