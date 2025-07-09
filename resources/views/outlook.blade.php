@@ -56,7 +56,7 @@
             <h3 class="fw-bold text-primary mb-3">Indonesia: Southeast Asia's Digital Growth Powerhouse</h3>
             <p>Indonesia leads the region with a booming digital economy, projected to reach USD 146 billion by 2025.</p>
             <p class="text-muted mb-4 mt-2 text-xs">12 Feb 2024</p>
-            <button class="read-more-btn">Read More</button>
+            <a href="{{ route('outlook.detail', ['slug' => 'detail']) }}" class="read-more-btn text-decoration-none">Read More</a>
           </div>
         </div>
       </div>
