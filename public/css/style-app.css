@@ -157,6 +157,7 @@ p{
 }
 .navbar-nav .nav-item {
     margin-left: 32px;
+    margin-bottom: 25px;
 }
 
 .background-blue-mandiri{
@@ -837,6 +838,16 @@ p{
     .dropdown-toggle[aria-expanded="true"] i {
         transform: rotate(180deg);
         transition: transform 0.3s ease;
+    }
+    .title-other-outlooks::before {
+        content: '';
+        display: inline-block;
+        width: 10%;
+        height: 6px;
+        background-color: #003366;
+        margin-right: 10px;
+        bottom: 5px;
+        position: relative;
     }
 }
 

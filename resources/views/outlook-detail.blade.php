@@ -19,7 +19,26 @@
           <a href="#" class="download-btn text-decoration-none my-4">Download PDF</a>
         </div>
   </div>
-<div class="container-fluid bg-hero-outlook-detail"></div>
+<!-- mobile -->
+<div class="container-fluid d-md-none d-sm-block">
+    <div class="row">
+        <div class="col-12">
+            <div class="card text-white border-0">
+                <img src="{{ asset('images/m-hero-market-outlook-details.webp') }}" class="card-img" alt="...">
+                <div class="card-img-overlay px-5 overlay-content">
+                    <small class="fs-4 fw-bold">Solutions</small>
+                    <h2 class="display-5 text-white">Indonesia: Southeast Asia's Digital Growth Powerhouse</h2>
+                    <p class="mt-3 text-white subheadline_outlook">
+                    Indonesia's economy is growing rapidly, fueled by technology, infrastructure development, and a booming consumer market. Startups and foreign investments play a key role, positioning Indonesia as a regional leader. This outlook highlights the country's transformation and key opportunities for investors.
+                    </p>
+                    <a href="#" class="download-btn text-decoration-none my-4">Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-hero-outlook-detail d-none d-md-block"></div>
 
 <div class="container-fluid">
     <div class="row align-items-center">
@@ -32,7 +51,7 @@
         <div class="col-lg-4 mt-lg-0 mt-5 px-5 px-lg-0">
             <h6>1st Key Point</h6>
             <h2>Digital Transformation and Technology</h2>
-            <p class="my-2 pe-lg-5">Indonesia is rapidly becoming a leader in the digital space, with a booming e-commerce market and fintech innovations driving its economic expansion. By 2025, the country’s digital economy is expected to reach USD 146 billion, fueled by increased smartphone adoption and internet access. The growth of digital services positions Indonesia as a major player in Southeast Asia's tech landscape.</p>
+            <p class="my-2 pe-lg-5">Indonesia is rapidly becoming a leader in the digital space, with a booming e-commerce market and fintech innovations driving its economic expansion. By 2025, the country's digital economy is expected to reach USD 146 billion, fueled by increased smartphone adoption and internet access. The growth of digital services positions Indonesia as a major player in Southeast Asia's tech landscape.</p>
             <a href="#" target="_blank">
                 <img src="{{ asset('images/see-more.png') }}" height="20" alt="">
             </a>
@@ -126,8 +145,9 @@
   </div>
 
 
-  <div class="my-3">&nbsp;</div>
-    <div class="container-fluid overlay-section mt-lg-5">
+    <div class="my-3">&nbsp;</div>
+    
+    <div class="container-fluid overlay-section mt-lg-5 d-none d-md-block">
         <img src="{{ asset('images/bg-enter-the-open-gate.webp') }}" class="img-fluid" alt="Market Outlook" />
 
         <!-- Text overlay -->
@@ -139,6 +159,22 @@
           <a href="{{ route('solutions') }}" class="download-btn text-decoration-none my-4">See Our Solutions</a>
         </div>
   </div>
+
+  <!-- mobile -->
+  <div class="container-fluid overlay-section mt-lg-5 d-md-none d-sm-block">
+        <img src="{{ asset('images/m-bg-enter-the-open-gate.webp') }}" class="img-fluid" alt="Market Outlook" />
+
+        <!-- Text overlay -->
+        <div class="overlay-content mt-5">
+          <h2 class="display-5 text-white w-100">Enter The Open Gate <span class="highlight-yellow">Empower Your Growth</span> </h2>
+          <p class="mt-3 text-white w-100">
+          A range of solutions and diverse investments products ready to walk you in a secure &amp; reliable path.
+          </p>
+          <a href="{{ route('solutions') }}" class="download-btn text-decoration-none my-4 mt-5">See Our Solutions</a>
+        </div>
+  </div>
+
+  
 
 <div class="container-fluid bg-section">
     <div class="container">
