@@ -25,7 +25,7 @@
         <div class="col-12">
             <div class="card text-white border-0">
                 <img src="{{ asset('images/m-hero-market-outlook-details.webp') }}" class="card-img" alt="...">
-                <div class="card-img-overlay px-5 overlay-content">
+                <div class="card-img-overlay overlay-content">
                     <small class="fs-4 fw-bold">Solutions</small>
                     <h2 class="display-5 text-white">Indonesia: Southeast Asia's Digital Growth Powerhouse</h2>
                     <p class="mt-3 text-white subheadline_outlook">
@@ -41,7 +41,7 @@
 <div class="container-fluid bg-hero-outlook-detail d-none d-md-block"></div>
 
 <div class="container-fluid">
-    <div class="row align-items-center">
+    <div class="row align-items-center d-none d-md-flex">
         <div class="col-lg-6">
             <div style="background-color: #003D79; height: auto">
                 <img src="{{ asset('images/key-hole.webp') }}" class="img-fluid p-5 my-5" alt="Market Outlook" style="margin-left:120px;"/>
@@ -59,7 +59,26 @@
         <div class="col-lg-1">&nbsp;</div>
     </div>
 
-    <div class="row align-items-center">
+    <!-- mobile version -->
+    <div class="row align-items-center d-md-none d-sm-flex">
+        <div class="col-lg-6 col-12 mt-5">
+            <div style="background-color: #003D79; height: auto">
+                <img src="{{ asset('images/key-hole.webp') }}" class="img-fluid p-5" alt="Market Outlook"/>
+            </div>
+        </div>
+        <div class="col-lg-1">&nbsp;</div>
+        <div class="col-lg-4 mt-lg-5 mt-0 px-5 px-lg-0">
+            <h6>1st Key Point</h6>
+            <h2>Digital Transformation and Technology</h2>
+            <p class="my-2 pe-lg-5">Indonesia is rapidly becoming a leader in the digital space, with a booming e-commerce market and fintech innovations driving its economic expansion. By 2025, the country's digital economy is expected to reach USD 146 billion, fueled by increased smartphone adoption and internet access. The growth of digital services positions Indonesia as a major player in Southeast Asia's tech landscape.</p>
+            <a href="#" target="_blank">
+                <img src="{{ asset('images/see-more.png') }}" height="20" alt="">
+            </a>
+        </div>
+        <div class="col-lg-1">&nbsp;</div>
+    </div>
+
+    <div class="row align-items-center d-none d-md-flex">
         <div class="col-lg-1">&nbsp;</div>
         <div class="col-lg-4 mt-lg-0 mt-5 px-5 px-lg-0">
             <h6>2nd Key Point</h6>
@@ -77,7 +96,26 @@
         </div>
     </div>
 
-    <div class="row align-items-center">
+    <!-- mobile version -->
+    <div class="row align-items-center d-md-none d-sm-flex">
+        <div class="col-lg-1">&nbsp;</div>
+        <div class="col-lg-6">
+            <div style="background-color: #003D79; height: auto">
+                <img src="{{ asset('images/2nd-key.webp') }}" class="img-fluid p-5" alt="Market Outlook"/>
+            </div>
+        </div>
+        <div class="col-lg-1">&nbsp;</div>
+        <div class="col-lg-4 mt-lg-5 mt-0 px-5 px-lg-0 py-4">
+            <h6>2nd Key Point</h6>
+            <h2>Infrastructure Development Driving Growth</h2>
+            <p class="my-2 pe-lg-5">Large-scale infrastructure projects, such as new airports, ports, and road networks, are essential to Indonesia’s economic development. These investments are improving regional connectivity, reducing business costs, and attracting foreign investment. The government’s commitment to infrastructure ensures Indonesia will remain a key hub for trade and commerce in the region.</p>
+            <a href="#" target="_blank">
+                <img src="{{ asset('images/see-more.png') }}" height="20" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="row align-items-center d-none d-md-flex">
         <div class="col-lg-6">
             <div style="background-color: #003D79; height: auto">
                 <img src="{{ asset('images/3nd-key.webp') }}" class="img-fluid p-5 my-5" alt="Market Outlook" style="margin-left:120px;"/>
@@ -94,9 +132,28 @@
         </div>
         <div class="col-lg-1">&nbsp;</div>
     </div>
+
+    <!-- mobile version -->
+    <div class="row align-items-center d-md-none d-sm-flex">
+        <div class="col-lg-6">
+            <div style="background-color: #003D79; height: auto">
+                <img src="{{ asset('images/3nd-key.webp') }}" class="img-fluid p-5 my-5" alt="Market Outlook"/>
+            </div>
+        </div>
+        <div class="col-lg-1">&nbsp;</div>
+        <div class="col-lg-4 mt-lg-5 mt-0 px-5 px-lg-0">
+            <h6>3rd Key Point</h6>
+            <h2>Tourism, Consumer Growth, and Market Opportunities</h2>
+            <p class="my-2 pe-lg-5">Indonesia's tourism sector is seeing a strong post-pandemic recovery, especially in popular destinations like Bali. Simultaneously, the expanding middle class is driving domestic demand across various industries, particularly in consumer goods and services. Together, these trends create an environment rich with opportunities for investment and growth.</p>
+            <a href="#" target="_blank">
+                <img src="{{ asset('images/see-more.png') }}" height="20" alt="">
+            </a>
+        </div>
+        <div class="col-lg-1">&nbsp;</div>
+    </div>
 </div>
 
-<div class="container py-5 mt-2">
+<div class="container py-lg-5 py-1 mt-2">
   <div class="row">
     <div class="col-12">
       <h3 class="title-other-outlooks">Other Outlooks</h3>
