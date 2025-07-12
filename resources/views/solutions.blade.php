@@ -209,7 +209,7 @@
         <div class="col-lg-4 mt-lg-0 mt-5 order-2 order-md-1 pe-2 px-5 px-lg-0">
             <h6>Bespoke Solutions</h6>
             <h2><span class="highlight-yellow">Personalized</span> <br>to Your Needs</h2>
-            <p class="my-2">Whether you're looking for growth, preservation, or optimizing productive funds, we're here for you. Backed by generations of expertise and a diverse range of solutions, we help you identify opportunities, manage risks, and optimize your investment strategy.</p>
+            <p class="my-2">Whether you're looking for growth, preservation, or optimizing productive funds, we're here for you. Backed by <a href="{{ route('management') }}" class="text-decoration-none" style="color: #67B2E8">generations of experts</a> and a diverse range of solutions, we help you identify opportunities, manage risks, and optimize your investment strategy.</p>
             <a href="{{ route('contact') }}" target="_blank">
                 <img src="{{ asset('images/contact-us.webp') }}" height="25" alt="">
             </a>
