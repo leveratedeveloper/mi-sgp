@@ -171,8 +171,8 @@
             <div class="col">
                 <div style="font-size:1rem;" class="text-muted">Total AUM</div>
                 <div>
-                <span style="font-size:1rem; font-weight:500">SG$</span>
-                <span style="font-size:1.5rem; font-weight:700">1.05</span>
+                <span style="font-size:1rem; font-weight:500">IDR</span>
+                <span id="amountOutstanding" style="font-size:1.5rem; font-weight:700">1.05</span>
                 <span style="font-size:1rem; font-weight:500; color:#004080">Billions</span>
                 </div>
             </div>
@@ -301,9 +301,32 @@
             const rawData = @json($values);
             const dataWithoutHeader = rawData.slice(1);
             const sampleData = convertToSampleData(dataWithoutHeader);
+
+            // Get last row
+            const lastRow = dataWithoutHeader[dataWithoutHeader.length - 1];
+
+            // Get amount outstanding (4th column)
+            const amtOutstandingStr = lastRow[3]; // Example: "2.711.694.147.709,62"
+
+            // Convert to number
+            const amtOutstandingNum = parseFloat(amtOutstandingStr.replace(/\./g, '').replace(',', '.'));
+
+            // Convert to billions
+            const amtOutstandingBillion = amtOutstandingNum / 1_000_000_000;
+
+            // Format as IDR string
+            const formattedOutstanding = ` ${amtOutstandingBillion.toLocaleString('en-US', {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            })}`;
+
+            // Put it in the page (assumes a container exists)
+            document.getElementById('amountOutstanding').innerText = formattedOutstanding;
+
+
             function convertToSampleData(data) {
                 return data.map(row => {
-                    const [dateStr, , navStr] = row;
+                    const [dateStr, , navStr, amtOutstanding] = row;
 
                     // Convert "28-Nov-14" to a Date object
                     const [day, monthStr, yearStr] = dateStr.split("-");
