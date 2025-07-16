@@ -143,10 +143,18 @@
             <!-- Growth -->
             <div class="col">
                 <div style="font-size:1rem;" class="text-muted">Growth</div>
-                <div id="growthValue">
+                <!-- <div id="growthValue">
                 <span style="font-size:1rem; font-weight:500">IDR</span>
                 <span style="font-size:1.5rem; font-weight:700" id="growthAmount">1.4777</span>
                 <span style="color:#28a745; font-size:1rem" id="growthChange">0.16 +0.01%</span>
+                </div> -->
+
+                <div id="growthValue">
+                    <strong style="font-size:1rem; font-weight:500">IDR 
+                        <span style="font-size:1.5rem; font-weight:700" id="growthAmount">1.4777</span></strong>
+                    <span id="growthChange">
+                        <span id="growthAbs">+0.16</span> (<span id="growthPct">+0.01%</span>)
+                    </span>
                 </div>
             </div>
             
@@ -313,6 +321,19 @@
                 });
             }
 
+            function animateValue(element, start, end, duration = 500, decimal = 4, suffix = '') {
+                const startTime = performance.now();
+                function update(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const value = start + (end - start) * progress;
+                    element.innerText = `${value >= 0 ? '+' : ''}${value.toFixed(decimal)}${suffix}`;
+                    if (progress < 1) requestAnimationFrame(update);
+                }
+                requestAnimationFrame(update);
+            }
+
+
             function updateGrowth(chart) {
                 const extremes = chart.xAxis[0].getExtremes();
                 const visibleData = sampleData.filter(([timestamp]) => {
@@ -322,14 +343,33 @@
                 if (visibleData.length >= 2) {
                     const start = visibleData[0][1];
                     const end = visibleData[visibleData.length - 1][1];
-                    const growth = (end - start).toFixed(4);
-                    const percent = ((growth / start) * 100).toFixed(2);
+                    const growth = end - start;
+                    const percent = (growth / start) * 100;
 
-                    document.getElementById('growthAmount').innerText = end.toFixed(2);
-                    document.getElementById('growthChange').innerText = `${growth > 0 ? '+' : ''}${growth} (${growth > 0 ? '+' : ''}${percent}%)`;
-                    document.getElementById('growthChange').style.color = growth >= 0 ? '#00A000' : '#FF0000';
+                    // Elements
+                    const growthAmountEl = document.getElementById('growthAmount');
+                    const growthAbsEl = document.getElementById('growthAbs');
+                    const growthPctEl = document.getElementById('growthPct');
+                    const growthChangeEl = document.getElementById('growthChange');
+
+                    // Animate Amount
+                    const oldAmount = parseFloat(growthAmountEl.innerText) || start;
+                    animateValue(growthAmountEl, oldAmount, end, 500, 2);
+
+                    // Animate Absolute Growth
+                    const oldAbs = parseFloat(growthAbsEl.innerText) || 0;
+                    animateValue(growthAbsEl, oldAbs, growth, 500, 4);
+
+                    // Animate Percentage Growth
+                    const oldPct = parseFloat(growthPctEl.innerText) || 0;
+                    animateValue(growthPctEl, oldPct, percent, 500, 2, '%');
+
+                    // Change color
+                    growthChangeEl.style.color = growth >= 0 ? '#00A000' : '#FF0000';
                 }
             }
+
+
             // const sampleData = [
             //     [Date.UTC(2024, 7, 4), 1.4100],
             //     [Date.UTC(2024, 8, 4), 1.4100],
