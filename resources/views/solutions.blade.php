@@ -377,7 +377,8 @@
 
                     // Animate Amount
                     const oldAmount = parseFloat(growthAmountEl.innerText) || start;
-                    animateValue(growthAmountEl, oldAmount, end, 500, 2);
+                    growthAmountEl.innerText = end.toFixed(2);
+                    // animateValue(growthAmountEl, oldAmount, end, 500, 2);
 
                     // Animate Absolute Growth
                     const oldAbs = parseFloat(growthAbsEl.innerText) || 0;
