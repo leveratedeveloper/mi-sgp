@@ -143,21 +143,21 @@
             <!-- Growth -->
             <div class="col">
                 <div style="font-size:1rem;" class="text-muted">Growth</div>
-                <div>
+                <div id="growthValue">
                 <span style="font-size:1rem; font-weight:500">IDR</span>
-                <span style="font-size:1.5rem; font-weight:700">1.4777</span>
-                <span style="color:#28a745; font-size:1rem">0.16 +0.01%</span>
+                <span style="font-size:1.5rem; font-weight:700" id="growthAmount">1.4777</span>
+                <span style="color:#28a745; font-size:1rem" id="growthChange">0.16 +0.01%</span>
                 </div>
             </div>
             
             <!-- Change -->
-            <div class="col">
+            <!-- <div class="col">
                 <div style="font-size:1rem;" class="text-muted">Change</div>
                 <div>
                 <span style="font-size:1rem; font-weight:500">IDR</span>
                 <span style="font-size:1.5rem; font-weight:500">0.1844</span>
                 </div>
-            </div>
+            </div> -->
             
             <!-- Total AUM -->
             <div class="col">
@@ -312,6 +312,24 @@
                     return [Date.UTC(year, month, parseInt(day, 10)), nav];
                 });
             }
+
+            function updateGrowth(chart) {
+                const extremes = chart.xAxis[0].getExtremes();
+                const visibleData = sampleData.filter(([timestamp]) => {
+                    return timestamp >= extremes.min && timestamp <= extremes.max;
+                });
+
+                if (visibleData.length >= 2) {
+                    const start = visibleData[0][1];
+                    const end = visibleData[visibleData.length - 1][1];
+                    const growth = (end - start).toFixed(4);
+                    const percent = ((growth / start) * 100).toFixed(2);
+
+                    document.getElementById('growthAmount').innerText = end.toFixed(2);
+                    document.getElementById('growthChange').innerText = `${growth > 0 ? '+' : ''}${growth} (${growth > 0 ? '+' : ''}${percent}%)`;
+                    document.getElementById('growthChange').style.color = growth >= 0 ? '#00A000' : '#FF0000';
+                }
+            }
             // const sampleData = [
             //     [Date.UTC(2024, 7, 4), 1.4100],
             //     [Date.UTC(2024, 8, 4), 1.4100],
@@ -347,7 +365,15 @@
                 },
             },
             chart: {
-                height: 300
+                height: 300,
+                events: {
+                load: function () {
+                    updateGrowth(this);
+                    },
+                redraw: function () {
+                    updateGrowth(this);
+                    }
+                }
             },
             navigator: {
                 enabled: false
