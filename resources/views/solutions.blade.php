@@ -429,6 +429,7 @@
                 },
             },
             chart: {
+                backgroundColor: 'rgba(0, 62, 120, 0.1)',
                 height: 300,
                 events: {
                 load: function () {
