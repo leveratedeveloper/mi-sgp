@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Revolution\Google\Sheets\Facades\Sheets;
+// use Illuminate\Support\Facades\Storage;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,8 +36,15 @@ Route::get('/outlook', function () {
     return view('outlook');
 })->name('outlook');
 
+Route::get('/outlook/{slug}', function () {
+    return view('outlook-detail');
+})->name('outlook.detail');
+
 Route::get('/solutions', function () {
-    return view('solutions');
+    $values = Sheets::spreadsheet(env('GOOGLE_SHEET_ID'))
+            ->sheet('Money Market MI Website')
+            ->all();
+    return view('solutions', compact('values'));
 })->name('solutions');
 
 Route::get('/contact-us', function () {

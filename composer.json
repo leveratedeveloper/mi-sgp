@@ -10,7 +10,8 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
-        "livewire/livewire": "^3.5",
+        "livewire/livewire": "3.6.4",
+        "revolution/laravel-google-sheets": "^6.4",
         "tcg/voyager": "dev-1.6-l10"
     },
     "require-dev": {
