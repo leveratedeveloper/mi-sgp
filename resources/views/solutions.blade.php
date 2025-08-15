@@ -312,7 +312,7 @@
             const amtOutstandingNum = parseFloat(amtOutstandingStr.replace(/\./g, '').replace(',', '.'));
 
             // Convert to billions
-            const amtOutstandingBillion = amtOutstandingNum / 1_000_000_000;
+            const amtOutstandingBillion = amtOutstandingNum; /// 1_000_000_000;
 
             // Format as IDR string
             const formattedOutstanding = ` ${amtOutstandingBillion.toLocaleString('en-US', {

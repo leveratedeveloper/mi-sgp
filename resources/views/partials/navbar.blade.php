@@ -27,8 +27,8 @@
           Solution &amp; insight <i class="bi bi-chevron-down ms-1"></i> 
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{ route('strategy') }}">Our Strategy</a></li>
-            <li><a class="dropdown-item" href="{{ route('outlook') }}">Market Outlook</a></li>
+            <!-- <li><a class="dropdown-item" href="{{ route('strategy') }}">Our Strategy</a></li>
+            <li><a class="dropdown-item" href="{{ route('outlook') }}">Market Outlook</a></li> -->
             <li><a class="dropdown-item" href="{{ route('solutions') }}">Solutions</a></li>
           </ul>
         </li>
@@ -83,7 +83,7 @@
         <div class="container dropdown-menu w-100 start-0 end-0 mx-auto mt-0 border-0 shadow-sm p-lg-5" aria-labelledby="megaMenu" style="border-radius:0;max-width: 1522px;margin:auto;">
           <div class="container">
             <div class="row">
-              <div class="col-md-3">
+              <!-- <div class="col-md-3">
                 <a href="{{ route('strategy') }}" class="text-decoration-none">
                 <p class="fw-bold text-primary d-flex align-items-center">
                   Our Strategy &nbsp;<img src="{{ asset('images/arrow-right.svg') }}" alt="">
@@ -98,7 +98,7 @@
                 </p>
                 </a>
                 <p class="text-muted mb-0">Get to know our company detail, stakeholders, vision and mission.</p>
-              </div>
+              </div> -->
               <div class="col-md-3">
                 <a href="{{ route('solutions') }}" class="text-decoration-none">
                 <p class="fw-bold text-primary d-flex align-items-center">
