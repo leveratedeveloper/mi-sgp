@@ -250,6 +250,10 @@ p{
     height: auto; /* The height will be determined by the image */
 }
 
+.image-overlay-container h4{
+    color: white;
+}
+
 .overlay-text {
     position: relative;
     top: 100%;
